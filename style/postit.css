@@ -1,0 +1,95 @@
+body {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 1em;
+}
+section {
+  background-color: #666666bf;
+  border-radius: 2em;
+  box-shadow: 5px 5px 23px -1px #000000cf;
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.postIt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 23px -1px #00000079;
+  background-image: linear-gradient(
+    to top,
+    #bdbda3,
+    #c6c6a7,
+    #cecfab,
+    #d7d8af,
+    #e0e1b3,
+    #e5e6b7,
+    #ebecba,
+    #f0f1be,
+    #f3f4c1,
+    #f7f7c5,
+    #fafbc8,
+    #fefecc
+  );
+  width: 15em;
+  height: 15em;
+  transform: rotate(-5deg);
+  position: relative;
+  z-index: 10;
+}
+.hover:hover {
+  transform: scale(1.2);
+}
+.postIt:nth-of-type(2),
+.postIt:nth-of-type(4),
+.postIt:nth-of-type(8) {
+  transform: rotate(5deg);
+}
+.postIt:nth-of-type(6) {
+  transform: rotate(-8deg);
+}
+.postIt:nth-of-type(7) {
+  transform: rotate(-4deg);
+}
+.postIt:nth-of-type(3),
+.postIt:nth-of-type(6) {
+  background-image: linear-gradient(
+    to top,
+    #9596a5,
+    #9394a6,
+    #9b9bb0,
+    #a3a3bb,
+    #ababc6,
+    #b0b0ce,
+    #b6b5d6,
+    #bbbade,
+    #bfbee5,
+    #c3c2ec,
+    #c8c7f4,
+    #d4d4f9
+  );
+}
+#allpostIt {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+p {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  word-spacing: 10px;
+}
+span {
+  font-size: 1.1em;
+}
